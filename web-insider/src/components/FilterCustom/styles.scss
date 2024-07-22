@@ -1,0 +1,33 @@
+.select-coin-custom {
+  &__item {}
+
+  .ant-select-selection-item {
+    display: none !important;
+  }
+
+  .ant-select-selection-item-content {
+    .ant-checkbox {
+      display: none !important;
+    }
+  }
+}
+
+.ant-select-selection-placeholder {
+  padding-left: 30px !important;
+}
+
+.custom-checkbox .ant-checkbox-inner {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.custom-checkbox .ant-checkbox-inner::after {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+div[aria-selected="true"] {
+  background-color: #fff !important;
+  font-weight: 500 !important;
+  font-family: inherit !important;
+}

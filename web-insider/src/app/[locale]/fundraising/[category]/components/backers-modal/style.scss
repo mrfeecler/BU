@@ -1,0 +1,13 @@
+.modal-scroll .ant-modal-body {
+  &::-webkit-scrollbar {
+    display: block !important;
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #e5e6eb !important;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: none !important;
+  }
+  scrollbar-width: auto !important;
+}

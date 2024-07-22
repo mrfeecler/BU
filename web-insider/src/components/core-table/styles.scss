@@ -1,0 +1,111 @@
+.core-table {
+  .ant-table-thead {
+    .ant-table-column-title,
+    .ant-table-cell {
+      font-size: 14px;
+      font-family: 'Plus Jakarta Sans bold';
+      color: #333747;
+      background: #fff !important;
+      border-top: 1px solid #f0f0f0;
+      border-bottom: 1px solid #f0f0f0;
+
+      &::before {
+        width: 0px !important;
+      }
+    }
+    .ant-table-column-title {
+      border: 0px;
+    }
+  }
+  .ant-table-tbody {
+    .ant-table-cell {
+      color: #333747;
+      font-size: 14px;
+    }
+  }
+
+  .ant-table-container table > thead > tr:first-child > *:first-child {
+    @media (max-width: 768px) {
+      border-start-start-radius: 0px !important;
+    }
+  }
+
+  .ant-table-container table > thead > tr:first-child > *:last-child {
+    @media (max-width: 768px) {
+      border-start-end-radius: 0px !important;
+    }
+  }
+
+  .ant-table-tbody {
+    font-family: 'Plus Jakarta Sans Medium';
+    color: black;
+    font-size: 14px;
+
+    .ant-table-cell {
+      @media (max-width: 768px) {
+        padding: 18px 8px !important;
+      }
+    }
+  }
+
+  &__header {
+    @apply flex justify-between flex-col md:flex-row gap-3 pb-4;
+
+    .wrap-btn-filter {
+      @apply flex items-center gap-4 flex-row-reverse justify-end md:flex-row md:justify-between flex-1;
+    }
+
+    .btn-filter {
+      @apply border-[#E5E6EB] text-[#333747] font-jm py-3 px-5;
+      display: flex;
+      align-items: center;
+      height: 44px;
+
+      &:not(&:disabled) {
+        @apply hover:border-primary-500 hover:text-primary-500;
+      }
+    }
+  }
+
+  &__footer {
+    padding-bottom: 16px;
+    & > .mobile {
+      display: none;
+    }
+
+    .ant-pagination {
+      .ant-pagination-item.ant-pagination-item-active {
+        background-color: #5766ff;
+        & > a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.select-coin-custom__item {
+  background-color: #fff !important;
+}
+
+.ant-select-item-option-active {
+  background-color: #fff !important;
+}
+
+.ant-select-item-option {
+  background-color: #fff !important;
+}
+
+.ant-select-item-option-selected {
+  font-weight: 400 !important;
+}
+
+.custom-checkbox .ant-checkbox-inner {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.custom-checkbox .ant-checkbox-inner::after {
+  width: 10px !important; 
+  height: 10px !important;
+}

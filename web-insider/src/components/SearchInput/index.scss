@@ -1,0 +1,17 @@
+.custom-placeholder::placeholder {
+  color: #d1d2dc;
+  font-family: 'Plus Jakarta Sans Regular';
+}
+
+.focused {
+  animation: grow-input 0.5s ease-out forwards;
+}
+
+@keyframes grow-input {
+  0% {
+    width: 213px;
+  }
+  100% {
+    width: 431px;
+  }
+}

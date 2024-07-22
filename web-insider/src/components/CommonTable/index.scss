@@ -1,0 +1,30 @@
+.common-table {
+  .table-header {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Plus Jakarta Sans Medium';
+    color: black;
+  }
+
+  .ant-table-thead {
+    .ant-table-cell {
+      font-size: 14px;
+      font-weight: 700;
+      font-family: 'Plus Jakarta Sans Medium';
+      color: #333747;
+      background: #fff !important;
+      border-top: 1px solid #f0f0f0;
+      border-bottom: 1px solid #f0f0f0;
+
+      &::before {
+        width: 0px !important;
+      }
+    }
+  }
+
+  .ant-table-tbody {
+    font-family: 'Plus Jakarta Sans Medium';
+    color: black;
+    font-size: 14px;
+  }
+}

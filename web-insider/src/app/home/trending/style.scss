@@ -1,0 +1,54 @@
+.tab-trending {
+  .ant-tabs {
+    .ant-tabs-nav {
+      height: 56px;
+    }
+
+    .ant-tabs-tab {
+      @media screen and (min-width: 1024px) {
+        font-size: 16px;
+      }
+
+      &.ant-tabs-tab-active {
+        .ant-tabs-tab-btn {
+          color: #5766ff;
+        }
+      }
+    }
+
+    .ant-tabs-tab-btn {
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+
+      &:hover span {
+        color: #5766ff;
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      background-color: #5766ff;
+    }
+
+    .ant-tabs-nav-operations {
+      display: none !important;
+    }
+  }
+
+  .ant-tabs .ant-tabs-tab + .ant-tabs-tab {
+    margin: 0;
+  }
+
+  .ant-tabs-tab-active {
+    .tab-label {
+      font-size: 16px;
+      font-family: 'Plus Jakarta Sans Medium';
+      font-weight: 700;
+    }
+  }
+  .ant-tabs-tab-disabled {
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans Medium';
+    font-weight: 500;
+  }
+}

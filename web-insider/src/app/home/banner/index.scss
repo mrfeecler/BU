@@ -1,0 +1,48 @@
+.banner {
+  &__wrapper {
+    &__image {
+      animation: image-in 1s ease-out;
+      position: relative;
+      padding: 4px;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+  }
+
+  .highlight {
+    color: #5766ff;
+  }
+
+  .search-btn {
+    background: linear-gradient(180deg, #547aff 0%, #4551de 100%);
+    animation: button-in 0.35s ease-in-out;
+  }
+}
+
+@keyframes button-in {
+  0% {
+    right: 0;
+    opacity: 0;
+  }
+  100% {
+    right: 10px;
+    opacity: 1;
+  }
+}
+
+@keyframes image-in {
+  0% {
+    transform: translateY(120px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

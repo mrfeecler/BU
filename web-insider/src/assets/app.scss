@@ -1,0 +1,125 @@
+@import './base/font.scss';
+@import './base/animate.scss';
+
+:root {
+  --gray-200-color: #eef2f6;
+  --blue-primary-color: #5766ff;
+}
+
+body {
+  font-size: 14px;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.textover-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.box-shadow-common {
+  box-shadow: 0px 0px 16px 0px rgba(51, 55, 71, 0.08);
+}
+
+.pagination-mobile {
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .pagination-desktop {
+    display: none;
+  }
+
+  .pagination-mobile {
+    display: flex !important;
+  }
+}
+
+.bg-white-imp {
+  background-color: white !important;
+}
+
+.ant-pagination .ant-pagination-item a {
+  font-family: 'Plus Jakarta Sans Medium';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tooltip-light {
+  .ant-tooltip-arrow::before {
+    background: #fcfcfd !important;
+  }
+  .ant-tooltip-inner {
+    background: #fcfcfd !important;
+    color: #333747 !important;
+    font-family: 'Plus Jakarta Sans Medium' !important;
+    padding: 4px 8px !important;
+    font-size: 12px !important;
+    display: flex;
+    align-items: center;
+  }
+  &_large {
+    .ant-tooltip-arrow::before {
+      background: #fcfcfd !important;
+    }
+    .ant-tooltip-inner {
+      background: #fcfcfd !important;
+      color: #333747 !important;
+      font-family: 'Plus Jakarta Sans Medium' !important;
+      padding: 12px !important;
+      font-size: 12px !important;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.container-shadow {
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px 0px rgba(51, 55, 71, 0.08);
+  background-color: #ffffff;
+  font-family: 'Plus Jakarta Sans Medium';
+}
+
+.header-filter__options .ant-btn {
+  border-radius: 8px;
+  height: 44px;
+  padding: 0 20px;
+}
+
+.rangeDateBU .ant-picker-clear {
+  inset-inline-end: 18px !important;
+  & svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.ant-table-wrapper .ant-table-tbody .ant-table-row > .ant-table-cell-row-hover {
+  background: #eef2f6 !important;
+}
+
+.show-scroll {
+  &::-webkit-scrollbar {
+    display: block !important;
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #e5e6eb !important;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: none !important;
+  }
+  scrollbar-width: auto !important;
+}

@@ -1,0 +1,23 @@
+.header-filter {
+  &__options {
+    .ant-btn {
+      &.active {
+        background: linear-gradient(
+          180deg,
+          #547aff 0%,
+          #4551de 100%
+        ) !important;
+        color: white !important;
+      }
+
+      &:not(:disabled):hover {
+        background: linear-gradient(180deg, #547aff 0%, #4551de 100%);
+        color: white !important;
+      }
+    }
+
+    .ant-btn-default:disabled {
+      background: #fff !important;
+    }
+  }
+}
